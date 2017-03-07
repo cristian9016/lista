@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#66bb6a"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:padding="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/img"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="name"
+            android:textStyle="bold"
+            android:textColor="@color/blanco"
+            android:fontFamily="sans-serif"
+            android:id="@+id/name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/blanco"
+            android:hint="5000"
+            android:id="@+id/pass"/>
+
+    </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            >
+
+            <TextView
+                android:id="@+id/cantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textColor="@color/blanco"
+                android:hint="5"
+                android:layout_centerHorizontal="true"
+                />
+            <Button
+                android:id="@+id/remove"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/boton_redondo"
+                android:text="-"
+                android:textSize="20dp"
+                android:textColor="@color/blanco"
+                android:layout_below="@id/cantidad"
+                android:focusable="false"
+                android:layout_centerHorizontal="true"
+                android:onClick="boton"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
