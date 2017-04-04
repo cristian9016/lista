@@ -1,10 +1,9 @@
-package com.example.root.lista;
+package com.example.root.lista.Net;
 
 import android.os.AsyncTask;
 import android.util.Log;
 
 import java.io.IOException;
-import java.net.HttpURLConnection;
 
 /**
  * Created by root on 13/02/17.

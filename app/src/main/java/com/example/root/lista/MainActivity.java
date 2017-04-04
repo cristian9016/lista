@@ -17,6 +17,11 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.root.lista.Adapters.UsuarioAdapter;
+import com.example.root.lista.Java.Articulo;
+import com.example.root.lista.Java.Usuario;
+import com.example.root.lista.Net.HttpAsyncTask;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -98,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements HttpAsyncTask.Htt
 
     }
 
-    public void boton(View v){
+    public void remove(View v){
 
         RelativeLayout parentRow = (RelativeLayout) v.getParent();
         TextView t = (TextView) parentRow.getChildAt(0);

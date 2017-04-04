@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Tu Pedido</string>
-    <string name="url">http://192.168.0.17:8000/jason</string>
+    <string name="url">http://192.168.128.118:8000/jason</string>
     <string name="cargando">CARGANDO</string>
 </resources>

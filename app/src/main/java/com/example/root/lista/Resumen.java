@@ -2,13 +2,13 @@ package com.example.root.lista;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.root.lista.Adapters.ArticuloAdapter;
+import com.example.root.lista.Java.Articulo;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static android.R.layout.simple_list_item_1;
 
 public class Resumen extends AppCompatActivity {
 
@@ -23,10 +23,10 @@ public class Resumen extends AppCompatActivity {
 
         listaResumen = (ListView) findViewById(R.id.list);
         inicioVectores();
-        String[] g = {"cristian","laura"};
-        ArrayAdapter adapter1 = new ArrayAdapter(this,simple_list_item_1,g);
-        adapter = new ArticuloAdapter(this,data1);
-        listaResumen.setAdapter(adapter1);
+
+        adapter = new ArticuloAdapter(this,data);
+        listaResumen.setAdapter(adapter);
+
     }
 
     public void inicioVectores(){

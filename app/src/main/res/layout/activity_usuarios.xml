@@ -72,7 +72,7 @@
                 android:layout_below="@id/cantidad"
                 android:focusable="false"
                 android:layout_centerHorizontal="true"
-                android:onClick="boton"
+                android:onClick="remove"
                 />
 
         </RelativeLayout>

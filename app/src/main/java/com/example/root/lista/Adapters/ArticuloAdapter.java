@@ -1,4 +1,4 @@
-package com.example.root.lista;
+package com.example.root.lista.Adapters;
 
 
 import android.content.Context;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.example.root.lista.Java.Articulo;
+import com.example.root.lista.R;
 
 import java.util.List;
 
@@ -44,7 +47,7 @@ public class ArticuloAdapter extends BaseAdapter {
 
         View v;
         if(convertView == null){
-            v = View.inflate(context,R.layout.activity_items,null);
+            v = View.inflate(context, R.layout.activity_items,null);
         }
         else v = convertView;
 
